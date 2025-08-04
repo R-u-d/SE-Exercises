@@ -1,0 +1,75 @@
+# Calculate the Average of a Set of Numbers
+
+START
+store input in the variable "scores"
+for each number in "scores" add it to the variable "sum"
+divide "sum" by the lenght of "scores" and store in "average"
+print "average"
+END
+
+
+# Determine If a Number is Prime
+
+1. START
+2. store input in variable "number"
+3. # first check:
+        if "number" is smaller or equal to 1, if so print "not_prime"
+4. # second check:  
+        store "number" minus 1 in "range_max"
+        check each number between 2 and "range_max" represented as "x"
+        divide "number" by "x" and store rest in "remainder"
+        if for any of the checked numbers the "remainder" is 0, print "not_prime"
+5. if both of the checks are false, print "prime"
+6. END
+
+
+# Simulate a Simple Vending Machine
+
+1. START
+2. print "items"
+3. store input1 in variable "selection"
+4. for each "item" in "items"
+        if "selection" equals "item.ID"
+            print selected "item.ID"
+            if "item.stock" = 0 
+                print out of stock
+            else 
+                print please insert "item.price"
+                store input2 in variable "money"
+                "delta" = "item.price" - "money"
+                    # checking the 3 cases; to much, not enough or exact amount of money
+                if "delta" = 0 # no change
+                    print thank you, have a nice day!
+                if "delta" > 0 # not enough
+                    print amount missing "delta"
+                if "delta" < 0 # output change
+                    print thank you, have a nice day and dont forget your change "delta"
+                    "item.stock" - 1
+5. END
+
+
+
+1. START
+2. print "items"
+3. store input1 in variable "selection"
+4. for each "item" in "items"
+        if "selection" equals "item.ID"
+            print selected "item.ID"
+            if "item.stock" = 0 
+                print out of stock
+            else
+                print please insert "item.price"
+                while loop 
+                    store input2 in variable "money"
+                    "delta" = "item.price" - "money"
+                        # checking the 3 cases; too much, not enough or exact amount of money
+                    if "delta" < 0 # output change
+                        print thank you, have a nice day and dont forget your change "delta"
+                        exit loop
+                    if "delta" > 0 # not enough
+                        print amount missing "delta"
+                    if "delta" = 0 # no change
+                        print thank you, have a nice day!
+                        exit loop
+                "item.stock" - 1
+5. END

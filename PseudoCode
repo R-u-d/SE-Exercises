@@ -33,30 +33,6 @@ END
             print selected "item.ID"
             if "item.stock" = 0 
                 print out of stock
-            else 
-                print please insert "item.price"
-                store input2 in variable "money"
-                "delta" = "item.price" - "money"
-                    # checking the 3 cases; to much, not enough or exact amount of money
-                if "delta" = 0 # no change
-                    print thank you, have a nice day!
-                if "delta" > 0 # not enough
-                    print amount missing "delta"
-                if "delta" < 0 # output change
-                    print thank you, have a nice day and dont forget your change "delta"
-                    "item.stock" - 1
-5. END
-
-
-
-1. START
-2. print "items"
-3. store input1 in variable "selection"
-4. for each "item" in "items"
-        if "selection" equals "item.ID"
-            print selected "item.ID"
-            if "item.stock" = 0 
-                print out of stock
             else
                 print please insert "item.price"
                 while loop 

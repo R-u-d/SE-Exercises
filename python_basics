@@ -1,0 +1,210 @@
+# # # VARIABLES # # #
+
+# Step 1: Create variables:
+
+name = "Rud"
+age = 37
+height = 1.9
+
+
+# Step 2: print the variables:
+
+print(name)
+print(age)
+print(height)
+
+
+# Step 3: Check the type of the variables:
+
+print(type(name))
+print(type(age))
+print(type(height))
+
+
+# Step 4: Casting
+
+print("Age is " + str(age))
+age_str = str(age)
+print ("My name is", name, "and I am", age_str, "years old.")
+
+
+# Global Variable (Bonus):
+
+global_message = "Hello globe!"
+
+def modify_global_message():
+    global global_message
+    global_message = "Am I flat?"
+
+modify_global_message()
+
+print(global_message)
+
+
+
+# # # STRINGS # # #
+
+# Step 1: Create Strings:
+
+first_name = "Rud"
+last_name = "Hildermann"
+bio = "Hi, my name is Rud and I like to code in python!"
+
+
+# Step 2: Access Characters and Slice Strings:
+
+print((first_name[0]) + " " + (last_name[-1]))  
+print(bio[:10])
+
+
+# Step 3: Loop Through a String:
+
+for character in first_name:
+    print(character)
+    
+
+# Step 4: String Lenght:
+
+print(len(bio))
+
+
+# Step 5: Check Substrings:
+
+print("Python" in bio)
+print("Java" not in bio)
+
+
+# Step 6: Modify Strings:
+
+first_name.upper()
+last_name.lower()
+
+bio.strip()
+bio = bio.replace("python", "coding")
+
+print(bio.split(" "))
+
+
+# Step 7: Concatenate Strings:
+
+full_name = first_name + " " + last_name
+print(full_name)
+
+
+# Step 8: String Formatting:
+
+print(f"Hello, my name is {full_name} and I love Python!")
+
+print("My full name is {} and I am {} years old.".format(full_name, age))
+
+
+# Step 9: Escape Character: 
+
+print('He said, "Python\'s great')
+
+
+# Step 10: Bonus: Using string methods to display
+
+print(bio.center(50))
+
+print(full_name.count("a"))
+
+
+
+# # # OPERATORS # # #
+
+# Step 1: Arithmetic Operators:
+
+a = 15
+b = 4
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a // b)
+print(a % b)
+print(a ** b)
+
+
+# Step 2: Assignment Operators:
+
+x = 10
+
+x += 15
+print(x)
+x -= 15
+print(x)
+x *= 15
+print(x)
+x /= 15
+print(x)
+
+
+# Step 3: Comparison Operators:
+
+print(a == b)
+print(a != b)
+print(a > b)
+print(a < b)
+print(a >= b)
+print(a <= b)
+
+
+# Step 4: Logical Operators:
+
+is_python_fun = True
+is_java_fun = False
+
+print(is_python_fun and is_java_fun)
+print(is_python_fun or is_java_fun)
+print(not is_python_fun)
+print(not is_java_fun)
+
+
+# Step 5: Identity Operators:
+
+list1 = [1,2,3]
+list2 = list1
+
+list1 is list2
+list1 is not list2
+
+list3 = [1,2,3]
+list1 is list3
+
+
+# Step 6: Membership Operators:
+
+text = "Python programming is fun!"
+print("Python" in text)
+
+print("Java" not in text)
+
+
+# Step 7: Bitwise Operators (BONUS):
+
+a = 5
+b = 3
+
+print(a & b)
+print(a | b)
+print(a ^ b)
+print(a << 1)
+print(b >> 1)
+
+
+# Step 8: Operator Precedence:
+
+result1 = 5 + 5 * 10 ** 2       # 100 * 5 + 5 = 505
+
+
+result2 = (5 + 5) * 10 ** 2     # 10 * 100 = 1000
+
+
+result3 = ((5 + 5) * 10) ** 2   # 10 * 10 ** 2 = 10000
+
+
+print(result1)
+print(result2)
+print(result3)

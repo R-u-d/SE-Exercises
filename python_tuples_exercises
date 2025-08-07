@@ -1,0 +1,64 @@
+# # # Tuples: exercises # # #
+
+
+# 1. Create a Tuple
+
+my_tuple = ("monday", "tuesday", "wednesday", "thursday", "friday")
+
+
+# 2. Print the Tuple
+
+print("Step 2.0: Print the tuple: ", my_tuple)
+
+
+# 3. Access Tuple Items
+
+print("Step 3.0: Access first item: ", my_tuple[0])
+print("Step 3.1: Access last item: ", my_tuple[-1])
+
+
+# 4. Slice the Tuple
+
+print("Step 4.1: Slice the middle: ", my_tuple[2:4])
+print("Step 4.2: Slice start > middle: ", my_tuple[:4])
+print("Step 4.3: Slice middle > end: ", my_tuple[0:])
+
+
+# 5. Check if an Item Exists
+
+if "wednesday" in my_tuple:
+    print("Step 5.0: wednesday is in my_tuple: ")
+else:
+    print("Step 5.0: wednesday is not in my_tuple: ")
+
+
+# 6. Count and Index
+
+print("Step 6.0: count of friday: ", my_tuple.count("friday"))
+print("Step 6.1: index of friday: ", my_tuple.index("friday"))
+
+
+# 7. Packing and Unpacking
+
+first, second, middle, second_last, last = my_tuple
+*rest, last = my_tuple
+print("Step 7.0: unpacking second: ", rest, last)
+
+*rest, second_last, last = my_tuple
+print("Step 7.1: unpacking second: ", rest, second_last, last)
+
+first, *rest, last = my_tuple
+print("Step 7.2: unpacking second: ", first, rest, last)
+
+first, second, *rest = my_tuple
+print("Step 7.3: unpacking second: ", first, second, rest)
+
+
+# 8. Joining Tuples
+
+another_tuple = ("saturday", "sunday")
+week = my_tuple + another_tuple
+print("Step 8.0: Concatenate Tuples: ", week)
+
+double_week = my_tuple *2
+print("Step 8.1: Multiply Tuples: ", double_week)

@@ -1,0 +1,103 @@
+# Step  1: Create and Print a List
+
+programming_languages = ["python", "C#", "Rust", "Java", "C++"]
+print("Step  1.0: ",programming_languages)
+
+
+# Step  2: Access Elements by Index and Negative Index
+
+print("Step  2.1: ",programming_languages[0])
+print("Step  2.2: ",programming_languages[-1])
+print("Step  2.3: ",programming_languages[-3])
+
+
+# Step: 3 Slice a List
+
+print("Step  3.1: ",programming_languages[1:4])
+print("Step  3.2: ",programming_languages[:3])
+print("Step  3.3: ",programming_languages[2:])
+
+
+# Step  4: Check if an Item Exists
+
+item_found = "Rust" in programming_languages
+print("Step  4.0: ",item_found)
+
+
+# Step  5: Add Items
+
+programming_languages.append("Lisp")
+programming_languages.insert(3, "Haskell")
+print("Step  5.0: ",programming_languages)
+
+
+# Step  6: Change Items
+
+programming_languages[0] = "Julia"
+print("Step  6.1: ",programming_languages)
+
+programming_languages[1:3] = "C", "lua"
+print("Step  6.2: ",programming_languages)
+
+
+# Step  7: Remove items
+programming_languages.remove("Java")
+print("Step  7.1: ",programming_languages)
+
+programming_languages.pop(-2)
+print("Step  7.2: ",programming_languages)
+
+copy_list = programming_languages.copy()
+print("Step  7.3: ",copy_list)
+copy_list.clear()
+print("Step  7.3: ",programming_languages)
+print("Step  7.3: ",copy_list)
+
+
+# Step  8: Copy a list
+
+copy_list = programming_languages[:]
+
+programming_languages.insert(0, "python")
+print("Step  8.1: ",copy_list)
+print("Step  8.2: ",programming_languages)
+
+
+# Step  9: Concatenate and Extend
+
+list_a = [1,2,3,4]
+list_b = ["A","B","C","D"]
+
+list_c = list_a + list_b
+print("Step  9.1: ",list_c)
+
+list_b.extend(list_a)
+print("Step  9.2: ",list_b)
+
+
+# Step  10: Sort and Reverse
+
+list_a.sort(reverse=True)
+print("Step 10.1: ",list_a)
+
+list_a.reverse()
+print("Step 10.2: ",list_a)
+
+list_d = sorted(list_a)
+print("Step 10.3: ",list_d)
+
+
+# Step  11: Count and Index
+
+count = list_a.count(2)
+print("Step 11.1: ",count)
+
+index = list_a.index(3)
+print("Step 11.2: ",index)
+
+
+# Step  12: List comprehension
+
+list_e = list_b
+list_e.upper()
+print("Step 12.1: ",list_e)

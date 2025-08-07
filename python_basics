@@ -9,23 +9,24 @@ height = 1.9
 
 # Step 2: print the variables:
 
-print(name)
-print(age)
-print(height)
+print("Name: " name)
+print("Age: " age)
+print("Height: " height)
 
 
 # Step 3: Check the type of the variables:
 
-print(type(name))
-print(type(age))
-print(type(height))
+print("Type of name :" type(name))
+print("Type of age :" type(age))
+print("Type of height :" type(height))
 
 
 # Step 4: Casting
 
 print("Age is " + str(age))
 age_str = str(age)
-print ("My name is", name, "and I am", age_str, "years old.")
+print ("My name is ", name, " and I am ", age_str, " years old.")
+print (f"My name is {name} and I am {age_str} years old.")
 
 
 # Global Variable (Bonus):
@@ -65,7 +66,7 @@ for character in first_name:
 
 # Step 4: String Lenght:
 
-print(len(bio))
+print("Number of characters in bio: ",len(bio))
 
 
 # Step 5: Check Substrings:
@@ -76,8 +77,8 @@ print("Java" not in bio)
 
 # Step 6: Modify Strings:
 
-first_name.upper()
-last_name.lower()
+print("First name uppercase:",first_name.upper())
+print("Last name lowercase:",last_name.lower())
 
 bio.strip()
 bio = bio.replace("python", "coding")
@@ -87,8 +88,9 @@ print(bio.split(" "))
 
 # Step 7: Concatenate Strings:
 
+print(f"{first_name} {last_name}")
 full_name = first_name + " " + last_name
-print(full_name)
+print("Full name: ",full_name)
 
 
 # Step 8: String Formatting:
@@ -118,13 +120,13 @@ print(full_name.count("a"))
 a = 15
 b = 4
 
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
-print(a // b)
-print(a % b)
-print(a ** b)
+print("Addition result: ", a + b)
+print("Substraction result: ", a - b)
+print("Multiplication result: ", a * b)
+print("Division result: ", a / b)
+print("Floor division result: ", a // b)
+print("Modulus result: ", a % b)
+print("Exponentiation result: ", a ** b)
 
 
 # Step 2: Assignment Operators:
@@ -132,23 +134,23 @@ print(a ** b)
 x = 10
 
 x += 15
-print(x)
+print("After +=x ", x)
 x -= 15
-print(x)
+print("After -=x ", x)
 x *= 15
-print(x)
+print("After *=x ", x)
 x /= 15
-print(x)
+print("After /=x ", x)
 
 
 # Step 3: Comparison Operators:
 
-print(a == b)
-print(a != b)
-print(a > b)
-print(a < b)
-print(a >= b)
-print(a <= b)
+print("a == b: ", a == b)
+print("a != b: ", a != b)
+print("a > b: ", a > b)
+print("a < b: ", a < b)
+print("a >= b: ", a >= b)
+print("a <= b: ", a <= b)
 
 
 # Step 4: Logical Operators:
@@ -156,10 +158,12 @@ print(a <= b)
 is_python_fun = True
 is_java_fun = False
 
-print(is_python_fun and is_java_fun)
-print(is_python_fun or is_java_fun)
-print(not is_python_fun)
-print(not is_java_fun)
+# "", [], {}, None, 0 are considered False in Python. 
+
+print("is_python_fun and is_java_fun: ", is_python_fun and is_java_fun)
+print("is_python_fun or is_java_fun: ", is_python_fun or is_java_fun)
+print("not is_python_fun: ", not is_python_fun)
+print("not is_java_fun: ", not is_java_fun)
 
 
 # Step 5: Identity Operators:
@@ -177,9 +181,9 @@ list1 is list3
 # Step 6: Membership Operators:
 
 text = "Python programming is fun!"
-print("Python" in text)
+print("Python in text: ", "Python" in text)
 
-print("Java" not in text)
+print("java not in text: ", "Java" not in text)
 
 
 # Step 7: Bitwise Operators (BONUS):
@@ -205,6 +209,6 @@ result2 = (5 + 5) * 10 ** 2     # 10 * 100 = 1000
 result3 = ((5 + 5) * 10) ** 2   # 10 * 10 ** 2 = 10000
 
 
-print(result1)
-print(result2)
-print(result3)
+print("no_parenthesis: ", result1)
+print("with_parenthesis: ", result2)
+print("nested_parenthesis: ", result3)
